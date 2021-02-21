@@ -16,5 +16,5 @@ Test Cases:
 - ✅ `()()`: valid
 - ✅ `())(`: invalid
 - ✅ `()[]`: valid
-- `([])`: valid
+- ✅ `([])`: valid
 - `([)]`: invalid

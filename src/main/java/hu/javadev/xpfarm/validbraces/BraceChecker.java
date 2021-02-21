@@ -11,17 +11,21 @@ public class BraceChecker {
             return false;
         }
 
+        return removeAllValidBraces(input).isEmpty();
+    }
+
+    private String removeAllValidBraces(String input) {
         String simplifiedBraces = input;
         String originalBraces;
         do {
             originalBraces = simplifiedBraces;
-            simplifiedBraces = removeValidBraces(originalBraces);
+            simplifiedBraces = removeValidBracePairs(originalBraces);
         } while (originalBraces.length() != simplifiedBraces.length());
 
-        return simplifiedBraces.isEmpty();
+        return simplifiedBraces;
     }
 
-    private String removeValidBraces(String input) {
+    private String removeValidBracePairs(String input) {
         String result = input;
         for (String braces : VALID_BRACES) {
             result = result.replace(braces, "");
