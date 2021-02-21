@@ -5,7 +5,7 @@ Due to specification:
 - only non-empty string arguments should be expected
 
 Test Cases:
-- `(`: invalid
+- ✅ `(`: invalid
 - `()`: valid
 - `)(`: invalid
 - `[]`: valid
