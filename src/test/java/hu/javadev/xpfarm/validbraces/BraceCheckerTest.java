@@ -20,7 +20,7 @@ class BraceCheckerTest {
         String input = "(";
 
         // when
-        checker.isValid(input);
+        boolean valid = checker.isValid(input);
     }
 
 }
