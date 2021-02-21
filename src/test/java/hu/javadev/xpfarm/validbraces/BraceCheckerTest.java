@@ -93,4 +93,17 @@ class BraceCheckerTest {
         assertThat(valid).isTrue();
     }
 
+    @Test
+    @DisplayName("closing then opening curly brace should be invalid")
+    void givenClosingAndOpeningCurlyBrace_isValid_shouldReturnFalse() {
+        // given
+        String input = "}{";
+
+        // when
+        boolean valid = checker.isValid(input);
+
+        // then
+        assertThat(valid).isFalse();
+    }
+
 }
