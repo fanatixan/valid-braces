@@ -145,4 +145,17 @@ class BraceCheckerTest {
         assertThat(valid).isFalse();
     }
 
+    @Test
+    @DisplayName("multiple valid brace pairs of different types should be valid")
+    void givenMultipleValidBracePairsOfDifferentTypes_isValid_shouldReturnTrue() {
+        // given
+        String input = "()[]";
+
+        // when
+        boolean valid = checker.isValid(input);
+
+        // then
+        assertThat(valid).isTrue();
+    }
+
 }
