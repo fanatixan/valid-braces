@@ -42,7 +42,7 @@ class BraceCheckerTest {
     }
 
     @Test
-    @DisplayName("closing then opening brace should be valid")
+    @DisplayName("closing then opening brace should be invalid")
     void givenClosingAndOpeningBrace_isValid_shouldReturnFalse() {
         // given
         String input = ")(";
@@ -68,7 +68,7 @@ class BraceCheckerTest {
     }
 
     @Test
-    @DisplayName("closing then opening bracket should be valid")
+    @DisplayName("closing then opening bracket should be invalid")
     void givenClosingAndOpeningBracket_isValid_shouldReturnFalse() {
         // given
         String input = "][";
