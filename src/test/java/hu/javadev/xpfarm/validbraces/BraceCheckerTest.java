@@ -28,4 +28,17 @@ class BraceCheckerTest {
         assertThat(valid).isFalse();
     }
 
+    @Test
+    @DisplayName("opening then closing brace should be valid")
+    void givenOpeningAndClosingBraceOnly_isValid_shouldReturnTrue() {
+        // given
+        String input = "()";
+
+        // when
+        boolean valid = checker.isValid(input);
+
+        // then
+        assertThat(valid).isTrue();
+    }
+
 }
