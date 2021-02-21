@@ -11,10 +11,15 @@ public class BraceChecker {
             return false;
         }
 
+        return removeValidBraces(input).isEmpty();
+    }
+
+    private String removeValidBraces(String input) {
+        String result = input;
         for (String braces : VALID_BRACES) {
-            input = input.replace(braces, "");
+            result = result.replace(braces, "");
         }
-        return input.isEmpty();
+        return result;
     }
 
 }
