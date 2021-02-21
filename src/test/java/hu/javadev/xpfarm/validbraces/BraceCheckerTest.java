@@ -171,4 +171,17 @@ class BraceCheckerTest {
         assertThat(valid).isTrue();
     }
 
+    @Test
+    @DisplayName("overlapping brace pairs should be invalid")
+    void givenOverlappingBracePairs_isValid_shouldReturnFalse() {
+        // given
+        String input = "([)]";
+
+        // when
+        boolean valid = checker.isValid(input);
+
+        // then
+        assertThat(valid).isFalse();
+    }
+
 }
