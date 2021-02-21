@@ -6,7 +6,8 @@ public class BraceChecker {
 
     private static final Map<Character, Character> BRACE_PAIRS = Map.of(
             '(', ')',
-            '[', ']'
+            '[', ']',
+            '{', '}'
     );
 
     public boolean isValid(String input) {
