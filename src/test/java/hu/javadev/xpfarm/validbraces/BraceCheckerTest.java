@@ -158,4 +158,17 @@ class BraceCheckerTest {
         assertThat(valid).isTrue();
     }
 
+    @Test
+    @DisplayName("embedded brace pairs with valid closing should be valid")
+    void givenEmbeddedBracePairsWithValidClosing_isValid_shouldReturnTrue() {
+        // given
+        String input = "([])";
+
+        // when
+        boolean valid = checker.isValid(input);
+
+        // then
+        assertThat(valid).isTrue();
+    }
+
 }
