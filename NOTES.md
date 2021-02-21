@@ -13,8 +13,8 @@ Test Cases:
 - ✅ `{}`: valid
 - ✅ `}{`: valid
 - ✅ `(]`: invalid
-- `())(`: invalid
 - `()()`: valid
+- `())(`: invalid
 - `()[]`: valid
 - `([])`: valid
 - `([)]`: invalid
