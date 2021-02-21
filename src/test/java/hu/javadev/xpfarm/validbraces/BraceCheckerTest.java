@@ -30,7 +30,7 @@ class BraceCheckerTest {
 
     @Test
     @DisplayName("opening then closing brace should be valid")
-    void givenOpeningAndClosingBraceOnly_isValid_shouldReturnTrue() {
+    void givenOpeningAndClosingBrace_isValid_shouldReturnTrue() {
         // given
         String input = "()";
 
@@ -43,7 +43,7 @@ class BraceCheckerTest {
 
     @Test
     @DisplayName("closing then opening brace should be valid")
-    void givenClosingAndOpeningBraceOnly_isValid_shouldReturnFalse() {
+    void givenClosingAndOpeningBrace_isValid_shouldReturnFalse() {
         // given
         String input = ")(";
 
@@ -56,7 +56,7 @@ class BraceCheckerTest {
 
     @Test
     @DisplayName("opening then closing bracket should be valid")
-    void givenOpeningAndClosingBracketsOnly_isValid_shouldReturnTrue() {
+    void givenOpeningAndClosingBrackets_isValid_shouldReturnTrue() {
         // given
         String input = "[]";
 

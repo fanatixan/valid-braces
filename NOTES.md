@@ -8,7 +8,7 @@ Test Cases:
 - ✅ `(`: invalid
 - ✅ `()`: valid
 - ✅ `)(`: invalid
-- `[]`: valid
+- ✅ `[]`: valid
 - `][`: valid
 - `{}`: valid
 - `}{`: valid
