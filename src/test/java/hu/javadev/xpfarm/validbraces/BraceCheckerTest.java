@@ -56,7 +56,7 @@ class BraceCheckerTest {
 
     @Test
     @DisplayName("opening then closing bracket should be valid")
-    void givenOpeningAndClosingBrackets_isValid_shouldReturnTrue() {
+    void givenOpeningAndClosingBracket_isValid_shouldReturnTrue() {
         // given
         String input = "[]";
 
