@@ -7,7 +7,7 @@ Due to specification:
 Test Cases:
 - ✅ `(`: invalid
 - ✅ `()`: valid
-- `)(`: invalid
+- ✅ `)(`: invalid
 - `[]`: valid
 - `][`: valid
 - `{}`: valid
