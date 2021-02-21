@@ -4,7 +4,10 @@ import java.util.Map;
 
 public class BraceChecker {
 
-    private static final Map<Character, Character> BRACE_PAIRS = Map.of('(', ')');
+    private static final Map<Character, Character> BRACE_PAIRS = Map.of(
+            '(', ')',
+            '[', ']'
+    );
 
     public boolean isValid(String input) {
         if (input.length() % 2 != 0) {
