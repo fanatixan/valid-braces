@@ -119,4 +119,17 @@ class BraceCheckerTest {
         assertThat(valid).isFalse();
     }
 
+    @Test
+    @DisplayName("multiple valid brace pairs should be valid")
+    void givenMultipleValidBracePairs_isValid_shouldReturnTrue() {
+        // given
+        String input = "()()";
+
+        // when
+        boolean valid = checker.isValid(input);
+
+        // then
+        assertThat(valid).isTrue();
+    }
+
 }
