@@ -9,7 +9,7 @@ Test Cases:
 - ✅ `()`: valid
 - ✅ `)(`: invalid
 - ✅ `[]`: valid
-- `][`: valid
+- ✅ `][`: valid
 - `{}`: valid
 - `}{`: valid
 - `(]`: invalid
