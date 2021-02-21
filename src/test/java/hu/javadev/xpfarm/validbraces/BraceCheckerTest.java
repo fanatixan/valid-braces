@@ -54,4 +54,17 @@ class BraceCheckerTest {
         assertThat(valid).isFalse();
     }
 
+    @Test
+    @DisplayName("opening then closing bracket should be valid")
+    void givenOpeningAndClosingBracketsOnly_isValid_shouldReturnTrue() {
+        // given
+        String input = "[]";
+
+        // when
+        boolean valid = checker.isValid(input);
+
+        // then
+        assertThat(valid).isTrue();
+    }
+
 }
