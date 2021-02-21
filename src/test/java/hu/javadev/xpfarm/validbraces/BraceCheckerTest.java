@@ -106,4 +106,17 @@ class BraceCheckerTest {
         assertThat(valid).isFalse();
     }
 
+    @Test
+    @DisplayName("opening then closing brace of different type should be invalid")
+    void givenNonMatchingClosingBrace_isValid_shouldReturnFalse() {
+        // given
+        String input = "(]";
+
+        // when
+        boolean valid = checker.isValid(input);
+
+        // then
+        assertThat(valid).isFalse();
+    }
+
 }
