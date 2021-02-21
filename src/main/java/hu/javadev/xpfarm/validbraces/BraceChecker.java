@@ -2,7 +2,8 @@ package hu.javadev.xpfarm.validbraces;
 
 public class BraceChecker {
 
-    public void isValid(String input) {
+    public boolean isValid(String input) {
+        return true;
     }
 
 }
